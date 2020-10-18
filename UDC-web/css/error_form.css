@@ -1,0 +1,8 @@
+div.error{
+	padding :0;
+	margin:5px;
+	text-align:center;
+}
+div.error p {
+	color : rgb(250, 0, 0);
+}

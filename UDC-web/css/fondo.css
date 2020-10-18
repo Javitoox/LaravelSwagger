@@ -1,0 +1,38 @@
+*{
+	box-sizing:border-box;
+}
+
+[class*="rej-"] {
+	position:fixed;
+	opacity:30%;
+	z-index:-10;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	margin: auto;
+	height: 50%;
+	width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	.rej-tab-5 {width: 50%;height:100%;}
+	.rej-tab-6 {width: 60%;height:90%;}
+	.rej-tab-7 {width: 70%;height:80%;}
+	.rej-tab-8 {width: 80%;height:70%;}
+	.rej-tab-9 {width: 90%;height:60%;}
+	.rej-tab-10{width:100%;height:50%;}	
+}
+
+@media only screen and (min-width: 800px) {
+	.rej-5 {width: 50%;height:100%;}
+	.rej-6 {width: 60%;height:90%;}
+	.rej-7 {width: 70%;height:80%;}
+	.rej-8 {width: 80%;height:70%;}
+	.rej-9 {width: 90%;height:60%;}
+	.rej-10{width: 100%;height:50%;}	
+}
+
+body{
+	background-color:#B9D8EA;
+}
