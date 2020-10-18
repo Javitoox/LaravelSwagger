@@ -1,0 +1,66 @@
+[2020-06-24 00:03:00] local.ERROR: Only one @OA\Info() allowed for @OA\OpenApi() multiple found in:
+    Using: C:\Users\javik\Desktop\Informatica 2\IISSI2\Matrícula de Honor\swagger\app\Http\Controllers\Controller.php on line 12
+  Skipped: C:\Users\javik\Desktop\Informatica 2\IISSI2\Matrícula de Honor\swagger\app\Http\Controllers\PlayersController.php on line 7 {"exception":"[object] (ErrorException(code: 0): Only one @OA\\Info() allowed for @OA\\OpenApi() multiple found in:
+    Using: C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\app\\Http\\Controllers\\Controller.php on line 12
+  Skipped: C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\app\\Http\\Controllers\\PlayersController.php on line 7 at C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Logger.php:39)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(1024, 'Only one @OA\\\\In...', 'C:\\\\Users\\\\javik\\\\...', 39, Array)
+#1 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Logger.php(39): trigger_error('Only one @OA\\\\In...', 1024)
+#2 [internal function]: OpenApi\\Logger->OpenApi\\{closure}('Only one @OA\\\\In...', 1024)
+#3 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Logger.php(71): call_user_func(Object(Closure), 'Only one @OA\\\\In...', 1024)
+#4 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Annotations\\AbstractAnnotation.php(361): OpenApi\\Logger::notice('Only one @OA\\\\In...')
+#5 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Annotations\\OpenApi.php(135): OpenApi\\Annotations\\AbstractAnnotation->validate(Array, Array, '#')
+#6 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Analysis.php(487): OpenApi\\Annotations\\OpenApi->validate()
+#7 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\functions.php(50): OpenApi\\Analysis->validate()
+#8 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(119): OpenApi\\scan(Array, Array)
+#9 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(66): L5Swagger\\Generator->scanFilesForDocumentation()
+#10 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(32): L5Swagger\\Generator::generateDocs()
+#11 [internal function]: L5Swagger\\Console\\GenerateDocsCommand->handle()
+#12 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#13 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#15 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#16 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#17 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#18 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Application.php(1000): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(L5Swagger\\Console\\GenerateDocsCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 {main}
+"} 
+[2020-06-24 00:04:15] local.ERROR: Only one @OA\Info() allowed for @OA\OpenApi() multiple found in:
+    Using: C:\Users\javik\Desktop\Informatica 2\IISSI2\Matrícula de Honor\swagger\app\Http\Controllers\Controller.php on line 12
+  Skipped: C:\Users\javik\Desktop\Informatica 2\IISSI2\Matrícula de Honor\swagger\app\Http\Controllers\PlayersController.php on line 7 {"exception":"[object] (ErrorException(code: 0): Only one @OA\\Info() allowed for @OA\\OpenApi() multiple found in:
+    Using: C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\app\\Http\\Controllers\\Controller.php on line 12
+  Skipped: C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\app\\Http\\Controllers\\PlayersController.php on line 7 at C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Logger.php:39)
+[stacktrace]
+#0 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(1024, 'Only one @OA\\\\In...', 'C:\\\\Users\\\\javik\\\\...', 39, Array)
+#1 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Logger.php(39): trigger_error('Only one @OA\\\\In...', 1024)
+#2 [internal function]: OpenApi\\Logger->OpenApi\\{closure}('Only one @OA\\\\In...', 1024)
+#3 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Logger.php(71): call_user_func(Object(Closure), 'Only one @OA\\\\In...', 1024)
+#4 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Annotations\\AbstractAnnotation.php(361): OpenApi\\Logger::notice('Only one @OA\\\\In...')
+#5 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Annotations\\OpenApi.php(135): OpenApi\\Annotations\\AbstractAnnotation->validate(Array, Array, '#')
+#6 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\Analysis.php(487): OpenApi\\Annotations\\OpenApi->validate()
+#7 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\zircote\\swagger-php\\src\\functions.php(50): OpenApi\\Analysis->validate()
+#8 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(119): OpenApi\\scan(Array, Array)
+#9 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\darkaonline\\l5-swagger\\src\\Generator.php(66): L5Swagger\\Generator->scanFilesForDocumentation()
+#10 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\darkaonline\\l5-swagger\\src\\Console\\GenerateDocsCommand.php(32): L5Swagger\\Generator::generateDocs()
+#11 [internal function]: L5Swagger\\Console\\GenerateDocsCommand->handle()
+#12 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(32): call_user_func_array(Array, Array)
+#13 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(90): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#14 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\BoundMethod.php(34): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#15 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Container\\Container.php(576): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#16 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(183): Illuminate\\Container\\Container->call(Array)
+#17 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Command\\Command.php(255): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#18 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#19 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Application.php(1000): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#20 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Application.php(271): Symfony\\Component\\Console\\Application->doRunCommand(Object(L5Swagger\\Console\\GenerateDocsCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#21 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\symfony\\console\\Application.php(147): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(90): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(133): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 C:\\Users\\javik\\Desktop\\Informatica 2\\IISSI2\\Matrícula de Honor\\swagger\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 {main}
+"} 
